@@ -7,6 +7,7 @@
 <meta name="description" content="Bootstrap 3 template for corporate business" />
 <!-- css -->
 <link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="plugins/flexslider/flexslider.css" rel="stylesheet" media="screen" />	
 <link href="css/cubeportfolio.min.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
 
@@ -26,7 +27,6 @@
 
 </head>
 <body>
-
 
 <div id="wrapper">
 	<!-- start header -->
@@ -97,7 +97,7 @@
                             </ul>
                         </li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Blog <i class="fa fa-angle-down"></i></a>
+                        <li class="dropdown active"><a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Blog <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu">
                                 <li><a href="blog-rightsidebar.html">Blog right sidebar</a></li>
                                 <li><a href="blog-leftsidebar.html">Blog left sidebar</a></li>
@@ -105,7 +105,7 @@
 								<li><a href="post-leftsidebar.html">Post left sidebar</a></li>
                             </ul>
 						</li>
-                        <li class="active"><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -117,47 +117,184 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<ul class="breadcrumb">
-					<li><a href="#"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
-					<li class="active">Contact</li>
+					<li><a href="#"><i class="fa fa-home"></i></a></li>
+					<li class="active">Blog</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	</section>
+	
 	<section id="content">
-	<div class="map">
-		<div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>
-	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-			    <h2>Contact us <small>get in touch with us by filling form below</small></h2>
-			    <hr class="colorgraph">
-			    <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-                <form action="" method="post" role="form" class="contactForm">
-                    <div class="form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                        <div class="validation"></div>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                        <div class="validation"></div>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                        <div class="validation"></div>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                        <div class="validation"></div>
-                    </div>
-                    
-                    <div class="text-center"><button type="submit" class="btn btn-theme btn-block btn-md">Send Message</button></div>
-                </form>
-                <hr class="colorgraph">
-
+		
+			<div class="col-lg-4">
+				<aside class="left-sidebar">
+				<div class="widget">
+					<form role="form">
+					  <div class="form-group">
+						<input type="text" class="form-control" id="s" placeholder="Search..">
+					  </div>
+					</form>
+				</div>
+				<div class="widget">
+					<h5 class="widgetheading">Categories</h5>
+					<ul class="cat">
+						<li><i class="fa fa-angle-right"></i><a href="#">Web design</a><span> (20)</span></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Online business</a><span> (11)</span></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Marketing strategy</a><span> (9)</span></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Technology</a><span> (12)</span></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">About finance</a><span> (18)</span></li>
+					</ul>
+				</div>
+				<div class="widget">
+					<h5 class="widgetheading">Latest posts</h5>
+					<ul class="recent">
+						<li>
+						<img src="img/dummies/blog/65x65/thumb1.jpg" class="pull-left" alt="" />
+						<h6><a href="#">Lorem ipsum dolor sit</a></h6>
+						<p>
+							 Mazim alienum appellantur eu cu ullum officiis pro pri
+						</p>
+						</li>
+						<li>
+						<a href="#"><img src="img/dummies/blog/65x65/thumb2.jpg" class="pull-left" alt="" /></a>
+						<h6><a href="#">Maiorum ponderum eum</a></h6>
+						<p>
+							 Mazim alienum appellantur eu cu ullum officiis pro pri
+						</p>
+						</li>
+						<li>
+						<a href="#"><img src="img/dummies/blog/65x65/thumb3.jpg" class="pull-left" alt="" /></a>
+						<h6><a href="#">Et mei iusto dolorum</a></h6>
+						<p>
+							 Mazim alienum appellantur eu cu ullum officiis pro pri
+						</p>
+						</li>
+					</ul>
+				</div>
+				<div class="widget">
+					<h5 class="widgetheading">Popular tags</h5>
+					<ul class="tags">
+						<li><a href="#">Web design</a></li>
+						<li><a href="#">Trends</a></li>
+						<li><a href="#">Technology</a></li>
+						<li><a href="#">Internet</a></li>
+						<li><a href="#">Tutorial</a></li>
+						<li><a href="#">Development</a></li>
+					</ul>
+				</div>
+				</aside>
 			</div>
+			
+			<div class="col-lg-8">
+				<article>
+						<div class="post-image">
+							<div class="post-heading">
+								<h3><a href="#">This is an example of standard post format</a></h3>
+							</div>
+							<img src="img/dummies/blog/img1.jpg" alt="" class="img-responsive" />
+						</div>
+						<p>
+							 Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet, ocurreret pertinacia pri an. No mei nibh consectetuer, semper laoreet perfecto ad qui, est rebum nulla argumentum ei. Fierent adipisci iracundia est ei, usu timeam persius ea. Usu ea justo malis, pri quando everti electram ei, ex homero omittam salutatus sed.
+						</p>
+						<div class="bottom-article">
+							<ul class="meta-post">
+								<li><i class="fa fa-calendar"></i><a href="#"> Mar 27, 2014</a></li>
+								<li><i class="fa fa-user"></i><a href="#"> Admin</a></li>
+								<li><i class="fa fa-folder-open"></i><a href="#"> Blog</a></li>
+								<li><i class="fa fa-comments"></i><a href="#">4 Comments</a></li>
+							</ul>
+							<a href="#" class="readmore pull-right">Continue reading <i class="fa fa-angle-right"></i></a>
+						</div>
+				</article>
+				
+				<article>
+						<div class="post-slider">
+							<div class="post-heading">
+								<h3><a href="#">This is an example of slider post format</a></h3>
+							</div>
+							<!-- start flexslider -->
+							<div id="post-slider" class="postslider flexslider">
+								<ul class="slides">
+									<li>
+									<img src="img/dummies/blog/img1.jpg" alt="" />
+									</li>
+									<li>
+									<img src="img/dummies/blog/img2.jpg" alt="" />
+									</li>
+									<li>
+									<img src="img/dummies/blog/img3.jpg" alt="" />
+									</li>
+								</ul>
+							</div>
+							<!-- end flexslider -->
+						</div>
+						<p>
+							 Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet, ocurreret pertinacia pri an. No mei nibh consectetuer, semper laoreet perfecto ad qui, est rebum nulla argumentum ei. Fierent adipisci iracundia est ei, usu timeam persius ea. Usu ea justo malis, pri quando everti electram ei, ex homero omittam salutatus sed.
+						</p>
+						<div class="bottom-article">
+							<ul class="meta-post">
+								<li><i class="fa fa-calendar"></i><a href="#"> May 17, 2014</a></li>
+								<li><i class="fa fa-user"></i><a href="#"> Admin</a></li>
+								<li><i class="fa fa-folder-open"></i><a href="#"> Blog</a></li>
+								<li><i class="fa fa-comments"></i><a href="#">4 Comments</a></li>
+							</ul>
+							<a href="#" class="readmore pull-right">Continue reading <i class="fa fa-angle-right"></i></a>
+						</div>
+				</article>
+				<article>
+						<div class="post-quote">
+							<div class="post-heading">
+								<h3><a href="#">Nice example of quote post format below</a></h3>
+							</div>
+							<blockquote>
+								<i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, ei quod constituto qui. Summo labores expetendis ad quo, lorem luptatum et vis. No qui vidisse signiferumque...
+							</blockquote>
+						</div>
+						<div class="bottom-article">
+							<ul class="meta-post">
+								<li><i class="fa fa-calendar"></i><a href="#"> May 17, 2014</a></li>
+								<li><i class="fa fa-user"></i><a href="#"> Admin</a></li>
+								<li><i class="fa fa-folder-open"></i><a href="#"> Blog</a></li>
+								<li><i class="fa fa-comments"></i><a href="#">4 Comments</a></li>
+							</ul>
+							<a href="#" class="readmore pull-right">Continue reading <i class="fa fa-angle-right"></i></a>
+						</div>
+				</article>
+				<article>
+						<div class="post-video">
+							<div class="post-heading">
+								<h3><a href="#">Amazing video post format here</a></h3>
+							</div>
+							<div class="video-container">
+								<iframe src="http://player.vimeo.com/video/30585464?title=0&amp;byline=0">
+								</iframe>
+							</div>
+						</div>
+						<p>
+							 Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet, ocurreret pertinacia pri an. No mei nibh consectetuer, semper laoreet perfecto ad qui, est rebum nulla argumentum ei. Fierent adipisci iracundia est ei, usu timeam persius ea. Usu ea justo malis, pri quando everti electram ei.
+						</p>
+						<div class="bottom-article">
+							<ul class="meta-post">
+								<li><i class="fa fa-calendar"></i><a href="#"> May 17, 2014</a></li>
+								<li><i class="fa fa-user"></i><a href="#"> Admin</a></li>
+								<li><i class="fa fa-folder-open"></i><a href="#"> Blog</a></li>
+								<li><i class="fa fa-comments"></i><a href="#">4 Comments</a></li>
+							</ul>
+							<a href="#" class="readmore pull-right">Continue reading <i class="fa fa-angle-right"></i></a>
+						</div>
+				</article>
+				<div id="pagination">
+					<span class="all">Page 1 of 3</span>
+					<span class="current">1</span>
+					<a href="#" class="inactive">2</a>
+					<a href="#" class="inactive">3</a>
+				</div>
+			</div>
+			
+
 		</div>
 	</div>
 	</section>
@@ -255,6 +392,8 @@
 <script src="js/modernizr.custom.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="plugins/flexslider/jquery.flexslider-min.js"></script> 
+<script src="plugins/flexslider/flexslider.config.js"></script>
 <script src="js/jquery.appear.js"></script>
 <script src="js/stellar.js"></script>
 <script src="js/classie.js"></script>
@@ -262,34 +401,7 @@
 <script src="js/jquery.cubeportfolio.min.js"></script>
 <script src="js/google-code-prettify/prettify.js"></script>
 <script src="js/animate.js"></script>
-<script src="https://maps.google.com/maps/api/js?sensor=true"></script>
 <script src="js/custom.js"></script>
-<script>
-jQuery(document).ready(function( $ ) {
-    
-    //Google Map
-    var get_latitude = $('#google-map').data('latitude');
-    var get_longitude = $('#google-map').data('longitude');
 
-    function initialize_google_map() {
-        var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
-        var mapOptions = {
-            zoom: 14,
-            scrollwheel: false,
-            center: myLatlng
-        };
-        var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map
-        });
-    }
-    google.maps.event.addDomListener(window, 'load', initialize_google_map);
-    
-});
-</script>
-
-<script src="contactform/contactform.js"></script>
-	
 </body>
 </html>
